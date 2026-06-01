@@ -1,0 +1,6 @@
+streamlit:
+  entrypoint: src/dashboard/app.py
+  secrets_required: false
+fastapi:
+  entrypoint: src.api.main:app
+  docker_enabled: true

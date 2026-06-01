@@ -1,0 +1,2 @@
+"""Canary scorecard entrypoint."""
+

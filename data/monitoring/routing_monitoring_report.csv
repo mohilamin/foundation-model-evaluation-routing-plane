@@ -1,0 +1,2 @@
+route_count,fallback_rate,average_utility_score,constraint_violation_rate,routing_drift_by_task_type,domain_distribution_shift
+250,0.552,0.6344,0.552,stable synthetic mix,none_detected

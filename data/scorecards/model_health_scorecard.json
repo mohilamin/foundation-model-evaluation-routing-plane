@@ -1,0 +1,6 @@
+{
+  "average_model_health_score": 82.28,
+  "highest_health_model": "safety_guarded_model",
+  "lowest_health_model": "cheap_batch_model",
+  "portfolio_health_status": "healthy"
+}

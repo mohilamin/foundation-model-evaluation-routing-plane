@@ -1,0 +1,2 @@
+tests_passed_placeholder,dashboard_entrypoint_exists,api_entrypoint_exists,dockerfile_exists,requirements_exists,streamlit_config_exists,README_deployment_section_exists,sample_data_exists,no_external_api_required,deployment_readiness_score
+True,True,True,True,True,True,True,True,True,100.0

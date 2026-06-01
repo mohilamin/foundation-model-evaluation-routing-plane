@@ -1,0 +1,11 @@
+model_id,model_name,stage,quality_score,safety_pass_rate,reliability_score,overall_model_utility_score
+accurate_large_model,Accurate Large Model,production,0.8999780000000001,0.5735,0.95,0.6762
+balanced_general_model,Balanced General Model,production,0.7899780000000001,0.5735,0.96,0.7419
+cheap_batch_model,Cheap Batch Model,production,0.469918,0.5735,0.93,0.6645
+code_specialist_model,Code Specialist Model,production,0.711508,0.5735,0.94,0.6997
+experimental_canary_model,Experimental Canary Model,canary,0.876298,0.5735,0.8954500000000001,0.7455
+fallback_model,Fallback Model,fallback,0.6199779999999999,1.0,0.99,0.8169
+fast_small_model,Fast Small Model,production,0.583208,0.5735,0.94,0.7126
+finance_domain_model,Finance Domain Model,production,0.755983,0.5735,0.95,0.699
+healthcare_domain_model,Healthcare Domain Model,production,0.780068,1.0,0.96,0.8079
+safety_guarded_model,Safety Guarded Model,production,0.839978,1.0,0.97,0.8105

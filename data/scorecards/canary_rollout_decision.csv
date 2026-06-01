@@ -1,0 +1,2 @@
+canary_model_id,average_quality_delta,average_safety_delta,regression_slice_count,rollout_recommendation,reason
+experimental_canary_model,-0.0224,-0.03,14,no_rollout,Canary is useful in selected slices but requires monitoring.

@@ -1,0 +1,23 @@
+task_types:
+  - classification
+  - extraction
+  - summarization
+  - retrieval_qa
+  - policy_answering
+  - fraud_triage
+  - healthcare_claim_review
+  - finance_explanation
+  - customer_support_response
+  - code_assistance
+  - safety_sensitive_answer
+  - batch_low_risk_summary
+domains:
+  - finance
+  - healthcare
+  - insurance
+  - cybersecurity
+  - retail
+  - customer_support
+  - legal
+  - software_engineering
+  - general_business

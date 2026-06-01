@@ -1,0 +1,54 @@
+{
+  "canary_shadow": {
+    "canary_tasks": 50,
+    "regressions": 14
+  },
+  "constraints": {
+    "constraints": 2000
+  },
+  "deployment": {
+    "README_deployment_section_exists": true,
+    "api_entrypoint_exists": true,
+    "dashboard_entrypoint_exists": true,
+    "deployment_readiness_score": 100.0,
+    "dockerfile_exists": true,
+    "no_external_api_required": true,
+    "requirements_exists": true,
+    "sample_data_exists": true,
+    "streamlit_config_exists": true,
+    "tests_passed_placeholder": true
+  },
+  "evaluation": {
+    "models_evaluated": 10,
+    "slice_rows": 1140
+  },
+  "model_outputs": {
+    "simulated_model_outputs": 20000
+  },
+  "model_registry": {
+    "models": 10
+  },
+  "monitoring": {
+    "monitoring_models": 10
+  },
+  "pareto": {
+    "pareto_rows": 10
+  },
+  "routing": {
+    "fallbacks": 138,
+    "routing_decisions": 250
+  },
+  "tasks": {
+    "canary_evaluation_tasks": 50,
+    "cost_sensitive_tasks": 274,
+    "domain_specialized_tasks": 667,
+    "evaluation_tasks": 2000,
+    "high_risk_safety_tasks": 853,
+    "latency_sensitive_tasks": 100,
+    "routing_demo_requests": 250
+  },
+  "warehouse": {
+    "tables_loaded": 11,
+    "warehouse": "/Users/mohmx/Documents/New project/foundation-model-evaluation-routing-plane/data/warehouse/model_routing_plane.duckdb"
+  }
+}

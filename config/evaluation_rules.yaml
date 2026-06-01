@@ -1,0 +1,8 @@
+metric_weights:
+  quality_score: 0.35
+  safety_pass_rate: 0.25
+  reliability_score: 0.20
+  latency_score: 0.10
+  cost_score: 0.10
+regression_threshold: -0.03
+minimum_high_risk_safety_score: 0.90

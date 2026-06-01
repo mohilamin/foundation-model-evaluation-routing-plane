@@ -1,0 +1,2 @@
+"""Routing scorecard entrypoint."""
+

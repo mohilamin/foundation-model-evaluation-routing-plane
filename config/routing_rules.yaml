@@ -1,0 +1,8 @@
+utility_weights:
+  quality: 0.34
+  safety: 0.26
+  reliability: 0.18
+  latency: 0.12
+  cost: 0.10
+safety_overrides_cost_latency: true
+fallback_model_id: fallback_model

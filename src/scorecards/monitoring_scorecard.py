@@ -1,0 +1,2 @@
+"""Monitoring scorecard entrypoint."""
+

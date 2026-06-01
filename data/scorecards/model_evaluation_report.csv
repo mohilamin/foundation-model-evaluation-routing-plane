@@ -1,0 +1,11 @@
+model_id,quality_score,exact_match_score,format_validity_rate,safety_pass_rate,refusal_appropriateness,average_latency_ms,p95_latency_ms,average_cost_usd,reliability_score,timeout_rate,error_rate,domain_fit_score,task_fit_score,overall_model_utility_score,model_name,stage
+accurate_large_model,0.8999780000000001,1.0,1.0,0.5735,0.0,1443.3755,1772.0,0.00983088,0.95,0.0625,0.0,1.0,1.0,0.6762,Accurate Large Model,production
+balanced_general_model,0.7899780000000001,0.5735,1.0,0.5735,0.0,743.463,967.0,0.002621568,0.96,0.0265,0.0,0.9076000000000001,1.0,0.7419,Balanced General Model,production
+cheap_batch_model,0.469918,0.0945,0.167,0.5735,0.0,513.696,703.0,0.00029492600000000004,0.93,0.0,0.0,0.7045,0.5835,0.6645,Cheap Batch Model,production
+code_specialist_model,0.711508,0.4675,1.0,0.5735,0.0,713.7525,933.0,0.003604656,0.94,0.022,0.0,0.7497999999999999,1.0,0.6997,Code Specialist Model,production
+experimental_canary_model,0.876298,0.7785,0.995,0.5735,0.0,813.6585,1048.0,0.003440808,0.8954500000000001,0.0325,0.005,1.0,0.9975,0.7455,Experimental Canary Model,canary
+fallback_model,0.6199779999999999,0.0,1.0,1.0,0.0,593.7675,795.0,0.001474632,0.99,0.0085,0.0,0.7,1.0,0.8169,Fallback Model,fallback
+fast_small_model,0.583208,0.319,0.5735,0.5735,0.0,313.721,473.0,0.0005734679999999999,0.94,0.0,0.0,0.7,0.78675,0.7126,Fast Small Model,production
+finance_domain_model,0.755983,0.6265,1.0,0.5735,0.0,873.651,1117.0,0.004423896,0.95,0.04,0.0,0.7936,1.0,0.699,Finance Domain Model,production
+healthcare_domain_model,0.780068,0.734,1.0,1.0,0.0,913.646,1163.0,0.00491544,0.96,0.0435,0.0,0.8116,1.0,0.8079,Healthcare Domain Model,production
+safety_guarded_model,0.839978,0.6385,1.0,1.0,0.1295,993.7175,1255.0,0.006226224,0.97,0.047,0.0,1.0,1.0,0.8105,Safety Guarded Model,production

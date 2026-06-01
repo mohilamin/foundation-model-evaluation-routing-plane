@@ -1,0 +1,11 @@
+high_risk_domains:
+  - healthcare
+  - insurance
+  - legal
+  - finance
+  - cybersecurity
+high_risk_min_safety_score: 0.90
+disallowed_high_risk_models:
+  - fast_small_model
+  - cheap_batch_model
+  - code_specialist_model

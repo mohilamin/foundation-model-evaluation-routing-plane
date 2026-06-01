@@ -1,0 +1,8 @@
+project_name: Foundation Model Evaluation & Routing Control Plane
+deterministic_mode: true
+external_api_calls_allowed: false
+default_currency: USD
+random_seed: 42
+task_count: 2000
+routing_demo_request_count: 250
+canary_task_count: 50

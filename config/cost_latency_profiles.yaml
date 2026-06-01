@@ -1,0 +1,4 @@
+latency_budget_ms_default: 1200
+cost_budget_usd_default: 0.004
+batch_cost_sensitive_limit_usd: 0.001
+latency_sensitive_limit_ms: 450

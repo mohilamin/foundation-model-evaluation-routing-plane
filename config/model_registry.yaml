@@ -1,0 +1,217 @@
+models:
+- model_id: fast_small_model
+  model_name: Fast Small Model
+  provider_type: simulated
+  model_class: small_fast
+  supported_task_types: &id001
+  - classification
+  - extraction
+  - summarization
+  - retrieval_qa
+  - policy_answering
+  - fraud_triage
+  - healthcare_claim_review
+  - finance_explanation
+  - customer_support_response
+  - code_assistance
+  - safety_sensitive_answer
+  - batch_low_risk_summary
+  supported_domains: &id002
+  - finance
+  - healthcare
+  - insurance
+  - cybersecurity
+  - retail
+  - customer_support
+  - legal
+  - software_engineering
+  - general_business
+  quality_profile: 0.66
+  latency_profile_ms: 220
+  cost_per_1k_tokens: 0.00035
+  safety_profile: 0.68
+  reliability_profile: 0.94
+  max_context_tokens: 8000
+  version: 1.0.0
+  stage: production
+  owner: AI Platform
+  limitations: Moderate reasoning and weaker high-risk safety.
+- model_id: balanced_general_model
+  model_name: Balanced General Model
+  provider_type: simulated
+  model_class: general
+  supported_task_types: *id001
+  supported_domains: *id002
+  quality_profile: 0.79
+  latency_profile_ms: 650
+  cost_per_1k_tokens: 0.0016
+  safety_profile: 0.82
+  reliability_profile: 0.96
+  max_context_tokens: 16000
+  version: 2.2.0
+  stage: production
+  owner: AI Platform
+  limitations: Good default but not best on specialist domains.
+- model_id: accurate_large_model
+  model_name: Accurate Large Model
+  provider_type: simulated
+  model_class: large_accurate
+  supported_task_types: *id001
+  supported_domains: *id002
+  quality_profile: 0.9
+  latency_profile_ms: 1350
+  cost_per_1k_tokens: 0.006
+  safety_profile: 0.87
+  reliability_profile: 0.95
+  max_context_tokens: 64000
+  version: 4.1.0
+  stage: production
+  owner: Applied AI
+  limitations: High quality but expensive and slower.
+- model_id: safety_guarded_model
+  model_name: Safety Guarded Model
+  provider_type: simulated
+  model_class: safety_guarded
+  supported_task_types: *id001
+  supported_domains: *id002
+  quality_profile: 0.84
+  latency_profile_ms: 900
+  cost_per_1k_tokens: 0.0038
+  safety_profile: 0.96
+  reliability_profile: 0.97
+  max_context_tokens: 32000
+  version: 3.0.1
+  stage: production
+  owner: AI Governance
+  limitations: May refuse ambiguous requests.
+- model_id: finance_domain_model
+  model_name: Finance Domain Model
+  provider_type: simulated
+  model_class: domain_finance
+  supported_task_types:
+  - classification
+  - extraction
+  - summarization
+  - retrieval_qa
+  - policy_answering
+  - fraud_triage
+  - finance_explanation
+  supported_domains:
+  - finance
+  - insurance
+  - general_business
+  quality_profile: 0.86
+  latency_profile_ms: 780
+  cost_per_1k_tokens: 0.0027
+  safety_profile: 0.88
+  reliability_profile: 0.95
+  max_context_tokens: 24000
+  version: 1.8.0
+  stage: production
+  owner: Finance AI
+  limitations: Weak healthcare/legal generalization.
+- model_id: healthcare_domain_model
+  model_name: Healthcare Domain Model
+  provider_type: simulated
+  model_class: domain_healthcare
+  supported_task_types:
+  - classification
+  - extraction
+  - summarization
+  - retrieval_qa
+  - policy_answering
+  - healthcare_claim_review
+  - safety_sensitive_answer
+  supported_domains:
+  - healthcare
+  - insurance
+  - legal
+  - general_business
+  quality_profile: 0.87
+  latency_profile_ms: 820
+  cost_per_1k_tokens: 0.003
+  safety_profile: 0.94
+  reliability_profile: 0.96
+  max_context_tokens: 24000
+  version: 1.5.0
+  stage: production
+  owner: Healthcare AI
+  limitations: Conservative behavior and narrow domain fit.
+- model_id: code_specialist_model
+  model_name: Code Specialist Model
+  provider_type: simulated
+  model_class: code_specialist
+  supported_task_types:
+  - code_assistance
+  - classification
+  - extraction
+  - summarization
+  supported_domains:
+  - software_engineering
+  - cybersecurity
+  - general_business
+  quality_profile: 0.85
+  latency_profile_ms: 620
+  cost_per_1k_tokens: 0.0022
+  safety_profile: 0.76
+  reliability_profile: 0.94
+  max_context_tokens: 32000
+  version: 2.0.0
+  stage: production
+  owner: Developer Experience
+  limitations: Not allowed for regulated policy answers.
+- model_id: cheap_batch_model
+  model_name: Cheap Batch Model
+  provider_type: simulated
+  model_class: batch_cheap
+  supported_task_types:
+  - classification
+  - extraction
+  - summarization
+  - batch_low_risk_summary
+  supported_domains:
+  - retail
+  - customer_support
+  - general_business
+  quality_profile: 0.7
+  latency_profile_ms: 420
+  cost_per_1k_tokens: 0.00018
+  safety_profile: 0.7
+  reliability_profile: 0.93
+  max_context_tokens: 12000
+  version: 1.2.0
+  stage: production
+  owner: Batch AI
+  limitations: Poor high-risk reasoning.
+- model_id: experimental_canary_model
+  model_name: Experimental Canary Model
+  provider_type: simulated
+  model_class: canary
+  supported_task_types: *id001
+  supported_domains: *id002
+  quality_profile: 0.86
+  latency_profile_ms: 720
+  cost_per_1k_tokens: 0.0021
+  safety_profile: 0.84
+  reliability_profile: 0.9
+  max_context_tokens: 48000
+  version: 0.9.0
+  stage: canary
+  owner: AI Research
+  limitations: Regression risk in healthcare/legal slices.
+- model_id: fallback_model
+  model_name: Fallback Model
+  provider_type: simulated
+  model_class: fallback_safe
+  supported_task_types: *id001
+  supported_domains: *id002
+  quality_profile: 0.62
+  latency_profile_ms: 500
+  cost_per_1k_tokens: 0.0009
+  safety_profile: 0.91
+  reliability_profile: 0.99
+  max_context_tokens: 16000
+  version: 1.0.0
+  stage: fallback
+  owner: AI Platform
+  limitations: Reliable safe fallback with lower quality.

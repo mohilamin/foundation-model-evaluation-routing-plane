@@ -1,0 +1,12 @@
+{
+  "README_deployment_section_exists": true,
+  "api_entrypoint_exists": true,
+  "dashboard_entrypoint_exists": true,
+  "deployment_readiness_score": 100.0,
+  "dockerfile_exists": true,
+  "no_external_api_required": true,
+  "requirements_exists": true,
+  "sample_data_exists": true,
+  "streamlit_config_exists": true,
+  "tests_passed_placeholder": true
+}

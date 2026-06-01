@@ -1,0 +1,2 @@
+routing_success_rate,constraint_satisfaction_rate,high_risk_safety_compliance_rate,fallback_rate,average_selected_model_utility,average_selected_model_cost,average_selected_model_latency,routing_explanation_coverage,overall_routing_quality_score
+0.448,0.448,1.0,0.552,0.6344,0.0565,0.2167,1.0,72.4

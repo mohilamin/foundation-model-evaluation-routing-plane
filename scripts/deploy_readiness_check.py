@@ -1,0 +1,23 @@
+"""Validate deployment prototype readiness."""
+
+from __future__ import annotations
+
+import sys
+from pathlib import Path
+
+ROOT = Path(__file__).resolve().parents[1]
+if str(ROOT) not in sys.path:
+    sys.path.insert(0, str(ROOT))
+
+from src.routing_plane_core import deployment_readiness  # noqa: E402
+
+
+def main() -> int:
+    """Run readiness check and return shell exit code."""
+    report = deployment_readiness()
+    print(report)
+    return 0 if report["deployment_readiness_score"] >= 90 else 1
+
+
+if __name__ == "__main__":
+    raise SystemExit(main())

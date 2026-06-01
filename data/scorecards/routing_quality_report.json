@@ -1,0 +1,11 @@
+{
+  "average_selected_model_cost": 0.0565,
+  "average_selected_model_latency": 0.2167,
+  "average_selected_model_utility": 0.6344,
+  "constraint_satisfaction_rate": 0.448,
+  "fallback_rate": 0.552,
+  "high_risk_safety_compliance_rate": 1.0,
+  "overall_routing_quality_score": 72.4,
+  "routing_explanation_coverage": 1.0,
+  "routing_success_rate": 0.448
+}

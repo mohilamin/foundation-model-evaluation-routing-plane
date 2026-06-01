@@ -1,0 +1,8 @@
+{
+  "average_utility_score": 0.6344,
+  "constraint_violation_rate": 0.552,
+  "domain_distribution_shift": "none_detected",
+  "fallback_rate": 0.552,
+  "route_count": 250,
+  "routing_drift_by_task_type": "stable synthetic mix"
+}
