@@ -11,3 +11,10 @@
 - Added canary and shadow reports.
 - Added monitoring and model health scorecards.
 - Added FastAPI, Streamlit, Docker, CI, tests, and deployment docs.
+
+## Repository Ownership Polish
+
+- Added clearer first-person project motivation in README.
+- Added design decisions, tradeoffs, validation log, lessons learned, production roadmap, review guide, screenshot checklist, and interview guide.
+- Preserved honest limitations and local/synthetic scope.
+- Added a lightweight documentation quality check script.

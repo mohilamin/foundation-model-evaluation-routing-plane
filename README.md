@@ -1,5 +1,115 @@
 # Foundation Model Evaluation & Routing Control Plane
 
+<!-- REPOSITORY_POLISH_START -->
+## Why I Built This
+
+I built this to model the routing layer that sits between AI applications and model providers.
+
+The key challenge I wanted to capture was the part that usually gets hidden in simple demos: how data, signals, decisions, constraints, evidence, and operating risk move through a system that someone else could inspect and run locally.
+
+I intentionally kept this version local and synthetic because the goal is to make the architecture and tradeoffs reviewable without external services, private data, paid APIs, or cloud setup.
+
+## Real Business Problem
+
+Enterprise AI teams use multiple models, and the right model depends on task type, quality bar, cost, latency, safety, and business risk.
+
+This matters because production teams do not only need outputs. They need evidence, ownership, repeatable validation, failure modes, and a path from local prototype to governed production system.
+
+## What This Project Proves
+
+- model evaluation
+- model routing
+- MLOps scorecards
+- constraint-aware routing
+- canary/shadow analysis
+- deployment prototyping
+- production-style data pipeline design
+- synthetic but realistic data modeling
+- scorecard generation
+- API/dashboard serving
+- testable architecture
+- honest limitation framing
+
+## Architecture In Plain English
+
+Synthetic tasks are evaluated across simulated model candidates, converted into scorecards, compared on Pareto frontiers, routed under constraints, and served through API/dashboard layers.
+
+The important pattern is that inputs are not just transformed into outputs. They are turned into scored, documented artifacts that can be reviewed by operators, analysts, engineers, and business stakeholders.
+
+## Key Design Decisions
+
+- Synthetic data keeps the repo safe to run and share publicly.
+- Deterministic local logic makes validation repeatable without paid APIs.
+- DuckDB or local artifacts provide warehouse-style inspection without cloud setup.
+- FastAPI shows how the system could be served as a service layer.
+- Streamlit gives reviewers a fast way to inspect the outputs visually.
+- Scorecards make quality, risk, reliability, or readiness measurable.
+- Tests and Ruff keep the repo from being only documentation.
+- Docker/CI files show the intended deployment shape without claiming production readiness.
+
+See [docs/design-decisions.md](docs/design-decisions.md) for the detailed tradeoff record.
+
+## Validation Evidence
+
+Latest validation run: 2026-06-02.
+
+- Pipeline: passed
+- Pytest: passed (92 tests)
+- Ruff: passed
+- Repository quality docs check: passed
+- Detailed command output is recorded in [docs/validation-log.md](docs/validation-log.md).
+
+## Generated Artifacts To Inspect
+
+- evaluation tasks
+- model registry
+- model cards
+- scorecards
+- routing decisions
+- Pareto reports
+- canary/shadow reports
+- DuckDB warehouse
+
+## How To Review This Repo
+
+Recruiter / hiring manager:
+- Read this README first.
+- Review [docs/recruiter-summary.md](docs/recruiter-summary.md) if present.
+- Check [docs/validation-log.md](docs/validation-log.md).
+- Use [docs/repo-review-guide.md](docs/repo-review-guide.md) for the quickest path.
+
+Senior engineer:
+- Review the architecture docs.
+- Inspect the `src/` modules.
+- Inspect tests and generated scorecards.
+- Read [docs/design-decisions.md](docs/design-decisions.md) and [docs/tradeoffs-and-simplifications.md](docs/tradeoffs-and-simplifications.md).
+
+Interview path:
+- Run the pipeline command from the validation log.
+- Launch the dashboard or API if this repo includes them.
+- Explain one design decision and one simplification honestly.
+
+## Known Limitations
+
+- Synthetic data only.
+- Local prototype rather than deployed production system.
+- Deterministic rules or simulations where a production system may use live models, streaming data, or enterprise integrations.
+- No real sensitive data is used.
+- No authentication, RBAC, secrets management, or production security boundary unless explicitly stated elsewhere in the repo.
+- External systems are simulated instead of connected live.
+
+## Production Roadmap
+
+- add real provider adapters
+- integrate MLflow/LiteLLM
+- add OpenTelemetry
+- enforce tenant budgets
+- deploy authenticated routing API
+
+See [docs/production-roadmap.md](docs/production-roadmap.md) for the staged roadmap.
+<!-- REPOSITORY_POLISH_END -->
+
+
 ## Executive Summary
 
 This project simulates a production model gateway that evaluates and routes requests across multiple foundation-model-style candidates.
