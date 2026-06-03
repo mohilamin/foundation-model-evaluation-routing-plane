@@ -1,0 +1,14 @@
+metric,value
+future_enhancement_count,5
+implemented_enhancement_count,0
+readiness_score,80.0
+production_roadmap_doc,True
+design_decisions_doc,True
+tradeoffs_doc,True
+validation_log_doc,True
+repo_review_guide,True
+readme_exists,True
+ci_workflow_present,True
+dockerfile_present,True
+api_entrypoint_present,True
+dashboard_entrypoint_present,True
